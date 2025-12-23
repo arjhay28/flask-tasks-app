@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Error - TaskMate{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="error-page">
+        <h1>Oops! Something went wrong </h1>
+        <p class="error-message">{{ error }}</p>
+        <a href="{{ url_for('task_routes.home') }}" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}
